@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-image: url('felipepelaquim-JxVNc4QYGwc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width:40%;
+    min-width:450px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    background:rgba(226, 140, 83, 0.699);
+    min-height: 100px;
+    border-radius: 10px;
+}
+#newtask{
+    position: relative;
+    padding:30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+    border: 2px solid rgba(150, 201, 180, 0.753);
+    padding:20px;
+    font-weight: 500;
+    color:brown;
+    position: relative;
+    border-radius: 5px;
+}
+#newtask input:focus{
+    outline:none;
+    border-color: rgb(54, 90, 59);
+}
+#newtask button{
+    float: right;
+    width:20%;
+    position: relative;
+    height: 45px;
+    border-radius: 5px;
+    font-family:'Bree Serif', serif ;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgba(34, 88, 80, 0.555);
+    border: none;
+    color: white;
+    outline:none;
+}
+#tasks{
+    background-color: rgba(126, 89, 92, 0.575);
+    padding:30px 20px ;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.task{
+    background-color: #da90a375;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #122931;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    color: black;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.completed{
+    text-decoration: line-through;
+}
